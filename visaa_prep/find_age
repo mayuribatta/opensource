@@ -1,0 +1,4 @@
+x=int(input())
+c_age=x
+v_age=x-15
+print(v_age)
