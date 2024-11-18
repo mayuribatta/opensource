@@ -1,0 +1,5 @@
+price=int(input())
+discount1=price * 0.10
+discount2 = 100
+final_bill = price - max(discount1,discount2)
+print(int(final_bill))
