@@ -1,0 +1,7 @@
+x,y =map(str,input().split())
+if (x,y)==('R','S') or (x,y)==('P','R') or (x,y)==('S','P'):
+    print("Vignesh")
+elif (x,y)==('S' , 'R') or (x,y)==('R','P') or (x,y)==('P','S'):
+    print("Charan")
+else:
+    print("NULL")
