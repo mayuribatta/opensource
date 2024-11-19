@@ -1,0 +1,12 @@
+n=int(input())
+attendance=list(map(int, input().split()))  
+max_ab_days=0
+cur_ab_days=0
+for day in attendance:
+    if day == 0:
+        cur_ab_days += 1  
+    else:
+        max_ab_days = max(max_ab_days,cur_ab_days)  
+        cur_ab_days = 0  
+max_ab_days = max(max_ab_days, cur_ab_days)
+print(max_ab_days)
