@@ -1,0 +1,6 @@
+n=int(input())
+for _ in range(n):
+    row=list(map(int, input().split()))
+    for i in range(n-1, -1, -1):
+        print(row[i], end=" ")
+    print()
