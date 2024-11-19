@@ -1,0 +1,8 @@
+=input()
+result=0
+for digit in n:
+    result+=int(digit)  
+if result%2==0:
+    print("Vignesh")
+else:
+    print("Charan")
