@@ -1,0 +1,8 @@
+n=int(input()) 
+a=list(map(int, input().split()))  
+balance_arr=[]
+for i in range(n):
+    l_wt = sum(a[:i])
+    r_wt = sum(a[i+1:])
+    balance_arr.append(abs(l_wt - r_wt))
+print(" ".join(map(str, balance_arr)))
