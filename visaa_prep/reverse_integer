@@ -1,0 +1,15 @@
+n = int(input().strip())
+min_n,max_n=-2**31,2**31 - 1
+rev_n = 0
+is_neg=n<0
+n=abs(n)
+while n!=0:
+    digit=n%10  
+    rev_n=rev_n*10+digit  
+    n//=10  
+if is_neg:
+    rev_n=-rev_n
+if rev_n<min_n or rev_n>max_n:
+    print(0)
+else:
+    print(rev_n)
