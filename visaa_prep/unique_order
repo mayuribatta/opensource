@@ -1,0 +1,7 @@
+n = int(input())  
+arr = list(map(int, input().split()))  
+uni_ele = []
+for num in arr:
+    if num not in uni_ele:  
+        uni_ele.append(num)  
+print(*uni_ele)
